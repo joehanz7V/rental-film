@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rental Film</title>
+</head>
+<body>
+  <h1>Rental Film</h1>
+  <form>
+    <label>Judul Film:</label>
+    <input type="text" id="judul">
+    <br>
+    <label>Genre:</label>
+    <select id="genre">
+      <option>Komedi</option>
+      <option>Action</option>
+      <option>Drama</option>
+    </select>
+    <br>
+    <label>Harga:</label>
+    <input type="number" id="harga">
+    <br>
+    <button onclick="tambahFilm()">Tambah Film</button>
+  </form>
+
+  <script>
+    function tambahFilm() {
+      let judul = document.getElementById('judul').value;
+      let genre = document.getElementById('genre').value;
+      let harga = document.getElementById('harga').value;
+      alert('Film ' + judul + ' berhasil ditambahkan!');
+    }
+  </script>
+</body>
+</html>
